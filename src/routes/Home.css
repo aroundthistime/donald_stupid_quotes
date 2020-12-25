@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro&family=Courgette&display=swap');
+
+main {
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height : 300px;
+    padding : 0px 100px;
+}
+
+main .loader-image{
+    width : 60px;
+}
+
+main .quote{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    padding : 30px 100px 20px 100px;
+    border : 4px solid black;
+    border-radius: 30px;
+    background-color: #dbeafa;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* animation: popFromBottom 1s ease-in-out linear; */
+    animation-name : a;
+    animation-duration: 1s;
+    font-family: 'Castoro', serif;
+    margin-bottom : 30px;
+}
+
+.quote .quote__content{
+    font-size : 30px;
+    font-family: 'Courgette', cursive;
+    margin-bottom : 30px;
+}
+
+.quote .quote__date{
+    font-size : 22px;
+    margin-bottom : 20px;
+}
+
+.quote .quote__url{
+    color : black;
+    margin-bottom : 10px;
+}
+
+main .refresh{
+    width : 50px;
+    height : 50px;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcfcfc;
+    border : 3px solid black;
+    border-radius: 15px;
+    font-size : 20px;
+    cursor: pointer;
+}
+
+main .refresh:hover{
+    transform: scale(1.1);
+}
+
+main .refresh:active{
+    transform: scale(1);
+}
+
+@keyframes a {
+    from {
+        opacity : 0;
+        transform : translateY(10px);
+    }
+    to{
+        opacity: 1;
+        bottom : 0;
+    }
+}
